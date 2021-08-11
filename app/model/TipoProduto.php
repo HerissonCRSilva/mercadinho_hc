@@ -16,10 +16,10 @@ namespace MercadinhoHC\app\model;
 
 use MercadinhoHC\core\model\Model;
 
-class Teste extends Model {
+class TipoProduto extends Model {
 
-    protected $table = 'teste';
-    protected $pk = 'id_teste';
+    protected $table = 'tipo_produto';
+    protected $pk = 'id_tipo_produto';
 
     public function store($data) {
         return $this->save($data);

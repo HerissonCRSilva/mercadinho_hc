@@ -15,7 +15,7 @@ namespace MercadinhoHC\app\controller;
 
 use MercadinhoHC\core\controller\Controller;
 
-class TesteController extends Controller
+class ProdutoController extends Controller
 {
 
     public function index()
@@ -25,13 +25,18 @@ class TesteController extends Controller
 
     public function get()
     {
-        $result = $this->Teste->findAll();
-        return ['list' => json_encode($result, true)];
+        $result = $this->Produto->findAll();
+        return ['list' => $result];
     }
 
     public function add($data)
     {
-        $this->Users->store($data);
+       return ['result' =>$this->Produto->store($data)];
+    }
+
+    public function remove($data)
+    {
+       return ['result' =>$this->Produto->delete($data)];
     }
 
 }

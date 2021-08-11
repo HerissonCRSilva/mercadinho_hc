@@ -1,0 +1,21 @@
+{
+    "name": "herissoncrsilva/mercadinho_hc",
+    "description": "Mercadinho HC",
+    "authors": [
+        {
+            "name": "Herisson C R Silva",
+            "email": "herisson.dev@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "MercadinhoHC\\core\\controller\\": ["core/controller/"],
+            "MercadinhoHC\\core\\model\\": ["core/model/"],
+            "MercadinhoHC\\app\\controller\\": ["app/controller/"],
+            "MercadinhoHC\\app\\model\\": ["app/model/"]
+        }
+    },
+    "require": {
+        "php": ">=7.4"
+    }
+}

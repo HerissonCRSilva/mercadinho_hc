@@ -32,9 +32,9 @@ class ProdutoVenda extends Model {
         $return = parent::findAll($data);
 
         foreach ($return as $key => $item) {
-            $return[$key]["valor_produto"] =  $item['quantidade_venda']*$item['valor_produto'];
-            $return[$key]["total_imposto_produto"] = ($return[$key]["valor_produto"]*$item['perc_imposto'])/100;
-            $return[$key]["total_produto"] = $return[$key]["valor_produto"]+$return[$key]["total_imposto_produto"];
+            $return[$key]["total_sem_imposto"] =  $item['quantidade_venda']*$item['valor_produto'];
+            $return[$key]["total_imposto_produto"] = ($return[$key]["total_sem_imposto"]*$item['perc_imposto'])/100;
+            $return[$key]["total_produto"] = $return[$key]["total_sem_imposto"]+$return[$key]["total_imposto_produto"];
         }
 
         return $return;

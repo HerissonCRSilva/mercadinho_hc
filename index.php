@@ -2,10 +2,6 @@
 
 namespace MercadinhoHC;
 
-//use MercadinhoHC\app\controller\UsersController;
-header('Access-Control-Allow-Origin: *');
-header('Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept');
-
 require 'constants.php';
 require __DIR__ . '/vendor/autoload.php';
 

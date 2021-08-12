@@ -18,3 +18,5 @@ const APP_CONTROLLER = APP . 'controller' . DS;
 
 const CORE_MODEL = CORE . 'model' . DS . 'Model.php';
 const CORE_CONTROLLER = CORE . 'controller' . DS . 'Controller.php';
+
+const BASE_URL = "http://localhost:8080/";

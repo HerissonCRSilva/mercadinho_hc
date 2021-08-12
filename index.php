@@ -17,9 +17,7 @@ switch ($_SERVER['REQUEST_METHOD']) {
 }
 
 if ($uri == '/') {
-    $response = ['response' => 'No content to show'];
-    echo json_encode($response);
-    exit;
+    $uri = "/Venda/verTodas";
 }
 
 $src = explode('/', $uri);
